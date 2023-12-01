@@ -57,6 +57,10 @@ a {
     background-color: white;
 }
 
+.bg-purple {
+    background-color: rgb(121, 106, 160);
+}
+
 .btn {
     color: white;
     padding: 10px 15px;
@@ -225,4 +229,30 @@ img {
     font-family: sans-serif;
     line-height: 2.4rem;
     margin-bottom: 40px;
+}
+
+
+/* *Footer */
+footer {
+    padding: 20px;
+    color: white;
+}
+
+.footer-top {
+    text-align: center;
+}
+
+.footer-bottom ul {
+    justify-content: space-between;
+
+}
+
+.footer-bottom a {
+    text-decoration: underline;
+    color: white;
+}
+
+.firm-name {
+    font: 1.1rem bold;
+    font-family: sans-serif;
 }
