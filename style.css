@@ -80,7 +80,7 @@ a {
 }
 
 img {
-    max-width: 60%;
+    max-width: 100%;
 }
 
 /* Header */
@@ -100,9 +100,13 @@ img {
     padding-top: 20px;
 }
 
-.dessert-type,
-.dessert-rate {
-    display: inline-block;
+.dessert-type-rate .left {
+    gap: 5px;
+}
+
+.hidden-title {
+    display: none;
+
 }
 
 .dessert-type-rate {
@@ -123,9 +127,14 @@ img {
     box-shadow: 1px 1px 10px lightgray;
 }
 
-.video {
+.video-box {
     width: 100%;
     height: 300px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
 }
 
 .small-infobox {
@@ -150,6 +159,15 @@ img {
 
 .small-infobox .bottom .fa-solid {
     color: black;
+}
+
+.small-infobox .top span {
+    color: rgb(241, 155, 60);
+    font: 1rem bold;
+}
+
+.small-infobox .bottom span {
+    font: 0.8rem normal;
 }
 
 .kcal {
@@ -206,6 +224,13 @@ img {
     color: red;
 }
 
+/* todo Adv space */
+.adv-image {
+    max-width: 100%;
+    padding: 20px 0;
+    display: none;
+}
+
 /* todo Main bottom */
 .presentation-title {
     font-size: 2.2rem;
@@ -224,8 +249,12 @@ img {
     align-items: center;
 }
 
+.dessert-image {
+    max-width: 60%;
+}
+
 .description {
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-family: sans-serif;
     line-height: 2.4rem;
     margin-bottom: 40px;
@@ -236,6 +265,7 @@ img {
 footer {
     padding: 20px;
     color: white;
+    border-bottom: 1px solid white;
 }
 
 .footer-top {
@@ -244,7 +274,7 @@ footer {
 
 .footer-bottom ul {
     justify-content: space-between;
-
+    padding: 0 30px;
 }
 
 .footer-bottom a {

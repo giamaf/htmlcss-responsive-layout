@@ -1,0 +1,54 @@
+/* ************?RESPONSIVE RULES************* */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .header-title {
+        text-align: left;
+        padding: 0 20px;
+    }
+
+    .hidden-title {
+        display: inline-block;
+    }
+
+    .video-box {
+        height: 420px;
+    }
+
+    .prep-guide ul {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+
+    .prep-guide li {
+        flex-basis: calc(100% / 3);
+    }
+
+    .fa-brands {
+        padding: 10px 50px;
+        border-radius: 20px;
+    }
+
+    .adv-image {
+        display: block;
+    }
+
+    .presentation.row {
+        display: inline;
+        align-items: flex-start;
+    }
+
+    .dessert-image {
+        max-width: 40%;
+        float: left;
+        padding-right: 10px;
+    }
+
+    .description {
+        margin: 0;
+        padding-bottom: 40px;
+    }
+}
