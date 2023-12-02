@@ -46,7 +46,6 @@ a {
 
 .color-purple {
     color: rgb(75, 58, 102);
-    font-family: sans-serif;
 }
 
 .bg-grey {
@@ -63,7 +62,7 @@ a {
 
 .btn {
     color: white;
-    padding: 10px 15px;
+    padding: 7px 12px;
     border-radius: 20px;
 }
 
@@ -72,24 +71,18 @@ a {
     margin-left: 5px;
 }
 
-.fa-brands {
-    background-color: white;
-    padding: 10px 15px;
-    border-radius: 40%;
-    box-shadow: 1px 1px 10px lightgray;
-}
-
 img {
     max-width: 100%;
 }
 
 /* Header */
 .header-title {
-    font-family: 'Nerko One', cursive;
+    font-family: 'Nerko One', 'cursive';
     text-transform: uppercase;
     text-shadow: 1px 1px 1px grey;
     text-align: center;
-    margin: 0.5rem 0;
+    margin: 10px 0;
+    padding: 0 20px;
 }
 
 /* todo Main */
@@ -98,28 +91,35 @@ img {
 .course-type {
     text-transform: uppercase;
     padding-top: 20px;
+    font-weight: lighter;
+    font-size: 0.9rem;
+}
+
+.dessert-type-rate {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 20px 0;
 }
 
 .dessert-type-rate .left {
     gap: 5px;
 }
 
-.hidden-title {
+.dessert-type-rate .hidden-title {
     display: none;
-
 }
 
-.dessert-type-rate {
-    justify-content: space-between;
+.dessert-type-rate .right {
     align-items: center;
-    padding-bottom: 10px;
+    font-size: 0.7rem;
 }
 
 .rate {
     text-transform: uppercase;
-    font: 0.8rem bold white;
+    color: white;
     background-color: rgb(241, 155, 60);
     margin-left: 10px;
+    font-weight: bold;
 }
 
 /* todo Video + small-infobox */
@@ -129,7 +129,7 @@ img {
 
 .video-box {
     width: 100%;
-    height: 300px;
+    height: 310px;
 }
 
 .video {
@@ -138,14 +138,29 @@ img {
 }
 
 .small-infobox {
-    padding: 10px;
+    padding: 15px;
+    font: 0.8rem bold;
 }
 
 .small-infobox .top {
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     border-bottom: 1px solid lightgray;
+    font-family: 'montserrat';
+    font-weight: bold;
+}
+
+.kcal {
+    background-color: rgb(121, 106, 160);
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.small-infobox .top span {
+    color: rgb(241, 155, 60);
 }
 
 .small-infobox .top,
@@ -154,57 +169,50 @@ img {
 }
 
 .small-infobox .bottom {
-    padding-top: 20px;
+    padding-top: 15px;
+    font-size: 0.6rem;
 }
 
 .small-infobox .bottom .fa-solid {
     color: black;
 }
 
-.small-infobox .top span {
-    color: rgb(241, 155, 60);
-    font: 1rem bold;
-}
-
-.small-infobox .bottom span {
-    font: 0.8rem normal;
-}
-
-.kcal {
-    background-color: rgb(121, 106, 160);
-    color: white;
-    font-family: sans-serif;
-    padding: 5px 5px;
-    border-radius: 5px;
-    margin: 0;
-}
-
-.bottom.col.bg-white {
+.col.bottom.bg-white {
+    width: 100%;
     padding: 20px;
 }
 
 .prep-guide li {
     display: flex;
     align-items: center;
-    font-size: 1.3rem;
-    color: black;
+    font-size: 1rem;
     gap: 5px;
     padding: 5px 0;
 }
 
-.prep-guide li h6:last-of-type {
-    font-family: sans-serif;
+.prep-guide ul h6 {
+    font-weight: lighter;
 }
 
 /* todo Social link */
 .row.social {
-    padding: 20px;
+    padding: 10px;
 }
 
 .social ul {
-    display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.social a {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px lightgray;
+}
+
+.social h6 {
+    display: none;
 }
 
 .fa-facebook {
@@ -227,19 +235,19 @@ img {
 /* todo Adv space */
 .adv-image {
     max-width: 100%;
-    padding: 20px 0;
+    padding-bottom: 20px;
     display: none;
 }
 
 /* todo Main bottom */
 .presentation-title {
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: lighter;
 }
 
 .break-line {
-    width: 20%;
+    width: 6rem;
     border: 1px solid rgb(241, 155, 60);
     margin: 20px 0;
 }
@@ -255,34 +263,41 @@ img {
 
 .description {
     font-size: 1rem;
-    font-family: sans-serif;
-    line-height: 2.4rem;
-    margin-bottom: 40px;
+    line-height: 2rem;
+    margin-bottom: 3rem;
 }
 
 
 /* *Footer */
 footer {
-    padding: 20px;
+    padding: 15px;
     color: white;
     border-bottom: 1px solid white;
-}
-
-.footer-top {
     text-align: center;
 }
 
+/* *Footer top */
+
+
+.firm-name {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.firm-address {
+    font-size: 0.7rem;
+    padding: 5px 0;
+    font-weight: normal;
+}
+
+/* *Footer bottom */
 .footer-bottom ul {
-    justify-content: space-between;
-    padding: 0 30px;
+    justify-content: center;
+    gap: 20px;
+    font-size: 0.6rem;
 }
 
 .footer-bottom a {
     text-decoration: underline;
     color: white;
-}
-
-.firm-name {
-    font: 1.1rem bold;
-    font-family: sans-serif;
 }

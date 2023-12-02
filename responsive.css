@@ -1,15 +1,22 @@
 /* ************?RESPONSIVE RULES************* */
+
+
+/* ************?Resposnive 768px************* */
+
 @media screen and (min-width: 768px) {
+    html {
+        font-size: 1.1rem;
+    }
+
     .container {
-        max-width: 750px;
+        max-width: 740px;
     }
 
     .header-title {
         text-align: left;
-        padding: 0 20px;
     }
 
-    .hidden-title {
+    .dessert-type-rate .hidden-title {
         display: inline-block;
     }
 
@@ -25,11 +32,11 @@
 
     .prep-guide li {
         flex-basis: calc(100% / 3);
+        gap: 3px;
     }
 
-    .fa-brands {
-        padding: 10px 50px;
-        border-radius: 20px;
+    .social a {
+        padding: 5px 50px;
     }
 
     .adv-image {
@@ -50,5 +57,74 @@
     .description {
         margin: 0;
         padding-bottom: 40px;
+    }
+}
+
+
+/* ************?Resposnive 992px************* */
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 1.3rem;
+    }
+
+    .container {
+        max-width: 1000px;
+    }
+
+    .video-info {
+        flex-wrap: nowrap;
+    }
+
+    .video-box {
+        flex-basis: 70%;
+        height: 380px;
+    }
+
+    .col.bottom.bg-white {
+        flex-basis: 30%;
+        padding: 20px;
+    }
+
+    .prep-guide ul {
+        display: block;
+    }
+
+    .prep-guide li {
+        padding: 10px 0;
+    }
+
+    .social li {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background-color: white;
+        padding: 10px 40px;
+        border-radius: 20px;
+        font-family: 'Font Awesome 6 Brands';
+        font-size: 0.8rem;
+        box-shadow: 1px 1px 10px lightgray;
+    }
+
+    .fa-brands {
+        background-color: transparent;
+    }
+
+    .social a {
+        box-shadow: 0 0 0;
+        padding: 0;
+    }
+
+    .social h6 {
+        display: inline-block;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-top {
+        text-align: left;
     }
 }
