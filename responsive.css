@@ -48,12 +48,6 @@
         align-items: flex-start;
     }
 
-    .dessert-image {
-        max-width: 40%;
-        float: left;
-        padding-right: 10px;
-    }
-
     .description {
         margin: 0;
         padding-bottom: 40px;
@@ -116,6 +110,25 @@
 
     .social h6 {
         display: inline-block;
+    }
+
+    .dessert-image {
+        max-width: 40%;
+        float: left;
+        padding-right: 10px;
+    }
+
+    .dessert-image {
+        max-width: 30%;
+        float: left;
+        padding-right: 10px;
+    }
+
+    .description {
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+        padding-bottom: 3rem;
+        margin: 0;
     }
 
     footer {
