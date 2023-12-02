@@ -259,12 +259,15 @@ img {
 
 .dessert-image {
     max-width: 60%;
+    float: left;
+    padding-right: 10px;
 }
 
 .description {
     font-size: 1rem;
     line-height: 2rem;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    margin: 0;
 }
 
 
