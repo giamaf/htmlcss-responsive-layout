@@ -20,10 +20,6 @@
         display: inline-block;
     }
 
-    .video-box {
-        height: 420px;
-    }
-
     .prep-guide ul {
         display: flex;
         flex-wrap: wrap;
@@ -69,9 +65,10 @@
         flex-wrap: nowrap;
     }
 
+
     .video-box {
         flex-basis: 70%;
-        height: 380px;
+        padding-bottom: 38%;
     }
 
     .col.bottom.bg-white {
