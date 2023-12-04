@@ -16,6 +16,10 @@
         text-align: left;
     }
 
+    .video {
+        height: 410px;
+    }
+
     .dessert-type-rate .hidden-title {
         display: inline-block;
     }
@@ -63,12 +67,6 @@
 
     .video-info {
         flex-wrap: nowrap;
-    }
-
-
-    .video-box {
-        flex-basis: 70%;
-        padding-bottom: 38%;
     }
 
     .col.bottom.bg-white {
